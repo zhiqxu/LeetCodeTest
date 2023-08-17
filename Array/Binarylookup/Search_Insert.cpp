@@ -44,7 +44,7 @@ public:
     }
     // 第二种：二分法（左闭右闭）
     // 时间复杂度O(logn)，空间复杂度O(1)
-    int searchInsert(vector<int> &nums, int target){
+    int searchInsert2(vector<int> &nums, int target){
         int left = 0;
         int right = nums.size() - 1;
         int middle;
@@ -76,7 +76,7 @@ public:
 
     // 第三种：二分法（左闭右开）
     // 复杂度同上
-    int searchInsert(vector<int>& nums, int target) {
+    int searchInsert3(vector<int>& nums, int target) {
         int n = nums.size();
         int left = 0;
         int right = n; // 定义target在左闭右开的区间里，[left, right)  target
